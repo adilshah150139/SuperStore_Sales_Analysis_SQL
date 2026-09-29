@@ -15,6 +15,4 @@ SELECT
     sub_category,
     total_sales
 FROM regional_sales
-WHERE sales_rank = 1;
-
-
+WHERE sales_rank = 1
