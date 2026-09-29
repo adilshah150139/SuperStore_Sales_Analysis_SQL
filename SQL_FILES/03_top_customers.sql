@@ -1,4 +1,4 @@
--- 2): Top 5 Customers making the most orders
+-- 3: Top 5 Customers making the most orders
 
 SELECT 
     customer_id,
@@ -11,3 +11,4 @@ GROUP BY
 ORDER BY
     total_spent DESC
 LIMIT 5;
+
