@@ -1,1 +1,1 @@
-CREATE DATABASE superstore_sales;
+CREATE DATABASE superstore_sales; 
