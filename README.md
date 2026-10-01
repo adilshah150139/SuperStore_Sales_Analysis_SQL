@@ -25,17 +25,103 @@ generate most of the profit.
 ## 📂 Dataset
 - **Kaggle:** [Superstore Dataset](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
 
-## 🛠️ Tech Stack & SQL Skills Demonstrated
+## 📊 Visualizations & Insights
 
-| Category | Functions/Techniques |
-|----------|---------------------|
-| **Data Quality** | `NULL` handling, row counts, data validation |
-| **Aggregations** | `SUM()`, `AVG()`, `COUNT(DISTINCT)`, `GROUP BY`, `HAVING` |
-| **Window Functions** | `DENSE_RANK()`, `OVER(PARTITION BY)` |
-| **Query Optimization** | CTEs, Subqueries, Indexing (`CREATE INDEX`) |
-| **Time-Series** | `DATE_TRUNC`, `EXTRACT`, date arithmetic |
+### 🏆 Top 10 Sub-Categories by Revenue
+- Chairs ($3.33M) and Phones ($3.26M) lead the pack — combined $6.58M.
+- All top 10 sub-categories exceed $1M in revenue.
+- Revenue is concentrated in the top 5, which contribute over $13M.
 
----
+### 💰 Sub-Category Profit & Loss — Focus on Loss-Making Products**
+![Category Profitability](OUTPUT/Charts/subcategory_loss_highlighted.png)
+Out of 17 sub-categories, only **three are loss-making**, but their combined impact is significant:
+
+| Sub-Category | Total Profit | Share of Total Losses |
+|--------------|--------------|-----------------------|
+| **Tables** | **-$35,500** | **79%** |
+| **Bookcases** | **-$6,900** | 15% |
+| **Supplies** | **-$2,400** | 6% |
+| **Total Loss** | **-$44,800** | **100%** |
+
+**Key Findings:**
+
+- **Tables is the single biggest loss-maker**, accounting for **79% of all losses** — a $35.5K deficit that wipes out the profit of several other sub-categories combined.
+- **Bookcases and Supplies** add another **$9.3K in losses**, bringing the total damage to **$44.8K**.
+- The three loss-making sub-categories span **two different categories** (Furniture and Office Supplies), suggesting the problem is not isolated to one product line.
+
+**The Contrast — Top Profit Drivers:**
+
+| Sub-Category | Total Profit |
+|--------------|--------------|
+| **Copiers** | **+$111.2K** |
+| **Phones** | **+$89.0K** |
+| **Accessories** | **+$83.9K** |
+| **Paper** | **+$68.1K** |
+| **Binders** | **+$60.4K** |
+
+- **Copiers alone ($111.2K) generate 2.5x more profit** than the total losses of Tables, Bookcases, and Supplies combined.
+- The **top 5 profitable sub-categories contribute $412.6K** — the business stays profitable only because a few strong performers offset the losses.
+
+### 👤 Top 5 Customers by Spending
+![Top Customer](OUTPUT/Charts/top_5_customers_total_spending.png)
+- **Top Spender:** **Sean Miller** leads all customers with **~$50,000** in total spending across **5 orders** (~$10k average order value).
+- **High-Value vs. High-Frequency:** **Adrian Barton** placed the most orders (**10 orders**), but generated less revenue (~$29k) than buyers with fewer, larger transactions.
+- **Key Takeaway:** Top spending is driven primarily by **high average order value** rather than transaction volume.
+
+### 🌍 Regional Sales Analysis
+
+#### Top Performing Sub-Categories
+
+| Region | Sub-Category | Total Sales ($) |
+| :--- | :--- | :--- |
+| **West** | Chairs | 203,562.72 |
+| **East** | Phones | 201,230.04 |
+| **Central** | Chairs | 170,461.36 |
+| **South** | Phones | 116,608.86 |
+
+#### Key Insights
+
+- **Category Dominance:** Regional sales are strictly driven by two core categories—**Chairs** in the West and Central regions, and **Phones** in the East and South regions.
+- **Top Region:** **West** leads overall top sales at **$203,562.72**, closely followed by **East** at **$201,230.04**.
+- **Lowest Region:** **South** generated the lowest top-performing revenue at **$116,608.86**.
+
+![Regional Revenue](OUTPUT/Charts/top_subcategories_by_region.png)
+
+### 📈 Revenue Growth & Seasonality (2014–2017)
+
+- **60% Overall Growth:** Revenue expanded steadily from 2014 to 2017, with baseline monthly sales increasing over time.
+- **Strong Q4 Seasonality:** Demand consistently spikes in Q4 (October–December) each year, reaching a record peak of ~$235,000 in late 2017.
+- **Post-Holiday Q1 Slump:** Revenue sharply contracts in Q1 (January–February) immediately following the holiday season.
+- **Rising Revenue Floor:** Despite seasonal dips, the lowest sales points grew from ~$10,000 in early 2014 to ~$40,000 in early 2017.
+![Revenue Growth Tracking](OUTPUT/Charts/revenue_growth_tracking.png)
+
+## 🚚 Shipping Mode Analysis
+
+### Overview Table
+
+| Ship Mode | Avg Shipping Days | Avg Profit ($) | Total Sales ($) |
+| :--- | :--- | :--- | :--- |
+| **Standard Class** | 5.01 | 27.49 | 2,716,432.16 |
+| **Second Class** | 3.24 | 29.54 | 918,386.88 |
+| **First Class** | 2.18 | 31.84 | 702,856.86 |
+| **Same Day** | 0.04 | 29.27 | 256,726.24 |
+
+#### Key Insights
+
+- **Volume Driver:** **Standard Class** generates the vast majority of revenue ($2.72M) despite having the longest average shipping time (~5 days).
+- **Highest Profitability:** **First Class** yields the highest average profit per order ($31.84) and delivers in roughly 2.2 days.
+- **Fastest Delivery:** **Same Day** shipping boasts an impressive average delivery time under 1 day (~0.04 days), but accounts for the lowest sales volume ($256.7k).
+
+
+
+
+
+
+
+
+
+
+
 
 ## 📂 Database Schema 
 
