@@ -1,12 +1,25 @@
-# 📊 Superstore Sales Performance & Operations Analysis
+# 🛒 Superstore Sales Analysis
 
-## 🎯 Project Objective
+> An end-to-end data analysis project exploring retail sales data 
+> using SQL and Python to uncover profit leaks, top customers, 
+> regional performance, and growth opportunities.
 
-Analyze a multi-year retail dataset from a global "Superstore" to extract actionable business insights using **SQL**. This project simulates a real-world business analyst scenario:
+---
 
-- Identify operational inefficiencies
-- Uncover hidden profit drains
-- Recommend data-driven strategies to boost net profit margins
+## 📖 Summary
+
+This project analyzes the Superstore sales dataset to answer key 
+business questions about profitability, customer value, regional 
+performance, and sales trends.
+
+The workflow follows a complete analytics pipeline:
+
+**Raw CSV → Database Setup → Data Profiling → Business Analysis → 
+Python Visualization → Insights**
+
+**Key Finding:** A small number of sub-categories and products drive 
+the majority of losses, while a handful of customers and regions 
+generate most of the profit.
 
 ---
 ## 📂 Dataset
